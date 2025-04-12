@@ -1,0 +1,19 @@
+.{
+    .name = "z_stream_server",
+    .version = "0.1.0",
+    .minimum_zig_version = "0.12.0",
+    .paths = .{
+        "", // includes everything in your root directory
+    },
+    .dependencies = .{
+        .@"zig-wayland" = .{
+            .url = "https://codeberg.org/ifreund/zig-wayland/archive/refs/heads/main.tar.gz",
+            .hash = "1220218a0e5c2cd63a2311417f4d3f2411dd17d75815f67c704ee657bd846ecbc3e0",
+        },
+        .@"zig-wlroots" = .{
+            .url = "https://codeberg.org/ifreund/zig-wlroots/archive/afbbbbe5579c750feed8de12b073fa50b0651137.tar.gz",
+            .hash = "122060ddef836b7872cb2088764a8bd2fb2e9254327673e8176b7f7a621ec897484f",
+        },
+    },
+    .root_source_file = "src/main.zig",
+}
